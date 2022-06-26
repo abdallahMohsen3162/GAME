@@ -1,0 +1,58 @@
+:root {
+    --dark-color: #19283f;
+    --green-color-alt: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--dark-color);
+    font-family: 'Press Start 2P', cursive;
+}
+
+::-moz-selection {
+    color: var(--dark-color);
+    background: var(--red-color);
+}
+
+ ::selection {
+    color: var(--dark-color);
+    background: var(--red-color);
+}
+
+#game-ins {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.settings {
+    padding: 30px;
+    background-color: var(--green-color-alt);
+}
+
+.txt {
+    background-color: #19283f;
+    padding: 30px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box button {
+    padding: 20px;
+    background-color: #19283f;
+    color: #ff3150;
+    transition-duration: 0.3s;
+}
+
+.box button:hover {
+    padding: 20px;
+    background-color: var(--red-color);
+    color: var(--dark-color);
+    transition-duration: 0.3s;
+}

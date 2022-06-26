@@ -1,0 +1,112 @@
+:root {
+    --dark-color: #19283f;
+    --green-color-alt: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+.body-red {
+    background-color: var(--red-color);
+}
+
+.body-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.body-dark .landing p {
+    color: white !important;
+}
+
+.colors-options {
+    color: #1c2c44;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+::-moz-selection {
+    color: var(--dark-color);
+    background: var(--red-color);
+}
+
+ ::selection {
+    color: var(--dark-color);
+    background: var(--red-color);
+}
+
+.navbar {
+    background-image: linear-gradient(#1c2c44, #000000);
+    min-height: 100px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #eff7fa;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff3150;
+}
+
+.landing p {
+    font-size: smaller;
+}
+
+.ani {
+    transform: translateY(20px);
+    transition-duration: 1s;
+}
+
+.box {
+    padding: 30px;
+    border: 3px solid black;
+}
+
+#dark-colors {
+    color: white;
+    background-color: black;
+}
+
+.game-link {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    width: fit-content;
+    border-right: var(--red-color) solid 5px;
+    background-color: white;
+    text-decoration: none;
+    color: var(--dark-color);
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: translateX(-100%);
+    transition-duration: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.card:hover a {
+    transform: translateX(0);
+    transition-duration: 0.3s;
+}
+
+.games-container {
+    position: relative;
+    z-index: 1;
+}
+
+.games-container::before {
+    position: absolute;
+    content: attr(data-name);
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition-duration: 0.3s;
+}
+
+.games-container:hover::before {
+    color: var(--red-color);
+    transition-duration: 0.3s;
+}

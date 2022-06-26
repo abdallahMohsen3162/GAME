@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <title>Random</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/random.css">
+</head>
+
+<body>
+
+    <p id="game-ins" class="before-hide text-center fa-1x">
+
+    </p>
+
+    <div class="text-light container-fluid text-center mt-5" id="random">
+
+
+        <div class="settings container-fluid text-dark" id="settings">
+            <label>Difficulty level {{ defeculty - 5}}</label>
+            <input @click="setOperation()" type="range" step="1" min="5" max="15" v-model="defeculty">
+        </div>
+        <br>
+        <app-comp :running="running" :txt="txt"></app-comp>
+        <br>
+        <button @click="getStarted()" id="New">New Game</button>
+
+        <hr>
+        <div class="box container bg-gradient p-3" id="sollution-box">
+            <sullotion :number="firstWrongAns"></sullotion>
+            <sullotion :number="trueAnswer"></sullotion>
+            <sullotion :number="secondWrongAns"></sullotion>
+        </div>
+
+
+
+
+
+
+
+        <div id="watch">helo</div>
+
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="js/random.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

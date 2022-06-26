@@ -1,0 +1,79 @@
+:root {
+    --dark-color: #19283f;
+    --green-color-alt: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    background-color: #19283f;
+    color: #eff7fa;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row>div {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.row>div span {
+    padding: 30px;
+}
+
+.row>div .e {
+    background-color: var(--section-color);
+    z-index: 2;
+}
+
+.row>div .b {
+    background-color: var(--green-color-alt);
+    z-index: 2;
+}
+
+.row>div .r {
+    background-color: var(--red-color);
+    z-index: 2;
+}
+
+@media (max-width:500px) {
+    .row>div {
+        margin: 0;
+    }
+}
+
+@media (max-width:350px) {
+    .row>div {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.willbe button {
+    padding: 30px;
+}
+
+.disabled:disabled,
+.disabled[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: no-drop;
+}
+
+#help {
+    margin: 0 auto 0 auto;
+    padding: 30px;
+}

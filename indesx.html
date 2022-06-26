@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Bondi</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body class="body-red" id="papa">
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">GAMDIAS</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-align-justify"></i></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="connect4.html">Connect4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="random.html">Random shaffle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="colors-options">
+            <button id="light-colors"><i class="fa-solid fa-sun"></i></button>
+            <button id="dark-colors"><i class="fa-regular fa-sun"></i></button>
+        </div>
+    </nav>
+
+    <div class="landing pb-3">
+        <h1 class=" text-light m-auto text-center pt-5" id="landlogo">GAMDIAS</h1>
+        <p class="text-black-50 lh-lg p-3 text-center" id="landingText">
+            <!--text-->
+        </p>
+
+    </div>
+    <br><br>
+
+    <div class="container pt-5">
+
+        <div class="row gap-2 justify-content-center">
+
+
+            <div data-name="Randome guiss" class="games-container card col-lg-5 col-md-5 col-sm-12 p-0 bg-dark overflow-hidden">
+                <a href="random.html" class="game-link">Play</a>
+                <img src="imgs/Numbers.png" class="card-img" alt="..." style="max-height: 1500px;">
+            </div>
+
+
+            <div data-name="Connect4" class="games-container card col-lg-5 col-md-5 col-sm-12 p-0 bg-dark overflow-hidden">
+                <a href="connect4.html" class="game-link">Play</a>
+                <img src="imgs/ccc.webp" class="card-img" alt="..." style="max-height: 1500px;">
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="js/vue.js"></script>
+    <script src="js/ctrl.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+</body>
+
+</html>

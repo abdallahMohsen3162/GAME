@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <title>connect4</title>
+    <link rel="stylesheet" href="css/connect4.css">
+</head>
+
+<body>
+    <a href="indesx.html" class="text-light p-3 m-4 fa-2x">
+        <i class="fa-solid fa-arrow-left">
+        </i>
+    </a>
+
+    <div class=" text-center fa-4x">
+        <div id="help"></div>
+        <div id="winn"></div>
+        <a href="connect4.html" style="visibility: hidden;" id="again"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+    </div>
+
+    <div class=" container-fluid text-light d-flex flex-column" id="box">
+        <br><br><br><br>
+        <div v-for="(i,index) in MAtrix">
+            <div class="row" id="rr">
+                <div v-for="(j,jndex) in i" class="willbe">
+                    <button class="e" @click="check(index,jndex)" id="index+'-'+jndex"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="js/connect4.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+
+
+    <div class=" container-fluid text-light d-flex flex-column" id="box">
+        <br><br><br><br>
+        <div v-for="i in MAtrix">
+            <div class="row" id="rr">
+                <div v-for="j in i">
+
+                    <span v-if="j=='e'" :class="j" style="color: black;"> {{j}}</span>
+                    <span v-else-if="j=='b'" :class="j"> {{j}}</span>
+                    <span v-else-if="j=='r'" :class="j"> {{j}}</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="ctrl-buttons">
+            <button><i class="fa-brands fa-playstation"></i></button>
+            <button><i class="fa-brands fa-playstation"></i></button>
+            <button><i class="fa-brands fa-playstation"></i></button>
+            <button><i class="fa-brands fa-playstation"></i></button>
+            <button><i class="fa-brands fa-playstation"></i></button>
+            <button><i class="fa-brands fa-playstation"></i></button>
+            <button><i class="fa-brands fa-playstation"></i></button>
+        </div>
+    </div>
+
+
+
+
+
+-->
